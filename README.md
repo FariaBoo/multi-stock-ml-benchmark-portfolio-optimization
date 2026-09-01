@@ -96,6 +96,3 @@ pip install numpy pandas scikit-learn tensorflow xgboost lightgbm
 
 ---
 
-## 📄 License
-
-Add your license here (e.g., MIT, Apache 2.0).
