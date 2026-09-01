@@ -1,0 +1,27 @@
+Ticker,Model,Train_Adj_R2,Val_Adj_R2,Overfitting_Gap,Risk_Level
+MSFT,lightgbm,0.9892,0.9785,0.010699999999999932,Status: Low Overfitting Risk
+MSFT,xgboost,0.9851,0.9707,0.014399999999999968,Status: Low Overfitting Risk
+MSFT,gru,0.912,0.8902,0.02180000000000004,Status: Low Overfitting Risk
+MSFT,bilstm,0.841,0.775,0.06599999999999995,Status: Low Overfitting Risk
+MSFT,conv1d_lstm,0.793,0.6845,0.10850000000000004,Status: Low Overfitting Risk
+MSFT,transformer,0.742,0.5042,0.2378,Caution: Moderate Overfitting
+MSFT,stacked_lstm,0.612,0.2268,0.3852,Warning: Severe Overfitting
+MSFT,cnn_lstm,0.451,-0.1062,0.5572,Warning: Severe Overfitting
+NEE,xgboost,0.978,0.962,0.016000000000000014,Status: Low Overfitting Risk
+NEE,gru,0.921,0.8949,0.026100000000000012,Status: Low Overfitting Risk
+NEE,conv1d_lstm,0.785,0.6029,0.18210000000000004,Caution: Moderate Overfitting
+NEE,bilstm,0.62,0.3037,0.31629999999999997,Warning: Severe Overfitting
+NEE,tcn,0.51,0.2092,0.3008,Warning: Severe Overfitting
+NEE,stacked_lstm,0.48,0.028,0.45199999999999996,Warning: Severe Overfitting
+NEE,transformer,0.39,-0.0535,0.4435,Warning: Severe Overfitting
+NEE,cnn_lstm,0.31,-0.6404,0.9503999999999999,Warning: Severe Overfitting
+NEE,lightgbm,0.89,-1.475,2.365,Warning: Severe Overfitting
+PG,xgboost,0.951,0.92,0.030999999999999917,Status: Low Overfitting Risk
+PG,tcn,0.79,0.6678,0.12220000000000009,Status: Low Overfitting Risk
+PG,transformer,0.69,0.4847,0.20529999999999993,Caution: Moderate Overfitting
+XOM,gru,0.812,0.737,0.07500000000000007,Status: Low Overfitting Risk
+XOM,transformer,0.54,0.0316,0.5084000000000001,Warning: Severe Overfitting
+XOM,tcn,0.48,-0.4254,0.9054,Warning: Severe Overfitting
+XOM,xgboost,0.94,-1.012,1.952,Warning: Severe Overfitting
+XOM,stacked_lstm,0.65,-2.019,2.669,Warning: Severe Overfitting
+XOM,lightgbm,0.96,-6.3977,7.3577,Warning: Severe Overfitting
