@@ -1,12 +1,12 @@
 # Multi-Stock Machine Learning Benchmark & Portfolio Optimization
 
-We built an end-to-end quantitative ML framework. It benchmarks deep learning against traditional financial models. We use **Walk-Forward Validation (WFV)** across a 7-asset universe to predict price movements. We then apply **Inverse Volatility Weighting** for portfolio optimization and backtesting.
+This is an end-to-end quantitative ML framework we built to benchmark deep learning against traditional financial models. It uses **Walk-Forward Validation (WFV)** across a 7-asset universe to predict price movements, then applies **Inverse Volatility Weighting** for portfolio optimization and backtesting.
 
 ---
 
 ## 🌟 Overview
 
-We predict price movements across diverse asset classes. No lookahead bias. No data leakage. We train and evaluate **9 model architectures** across **7 equities**. We auto-select top performers using strict validation guardrails. We then allocate capital through a risk-adjusted portfolio strategy.
+The pipeline predicts price movements across diverse asset classes, with no lookahead bias and no data leakage. It trains and evaluates **9 model architectures** across **7 equities**, auto-selects top performers using strict validation guardrails, then allocates capital through a risk-adjusted portfolio strategy.
 
 ### 📊 Asset Universe
 
@@ -27,24 +27,24 @@ We predict price movements across diverse asset classes. No lookahead bias. No d
 Raw Data ──► Feature Engineering ──► WFV Training ──► Guardrail Selection ──► Portfolio Backtest
 ```
 
-- **Feature Engineering** — We generate technical indicators and lag features for every asset.
-- **Walk-Forward Validation (WFV)** — We train and test across rolling time windows. This mirrors real trading conditions.
-- **Guardrail Selection** — We score candidates on validation-adjusted R². We drop overfit models with this rule:
+- **Feature Engineering** — generates technical indicators and lag features for every asset.
+- **Walk-Forward Validation (WFV)** — trains and tests across rolling time windows, mirroring real trading conditions.
+- **Guardrail Selection** — scores candidates on validation-adjusted R² and drops overfit models with this rule:
 
   ```
   Train Adj R² − Val Adj R² ≤ 0.20
   ```
 
 - **Portfolio Allocation Engine**
-  - We split assets into **Buy (Long)** and **Sell (Short)** based on predicted peaks and troughs.
-  - We weight capital by **Inverse Volatility** to minimize variance.
-  - We simulate execution with integer shares and leftover cash.
+  - Splits assets into **Buy (Long)** and **Sell (Short)** based on predicted peaks and troughs.
+  - Weights capital by **Inverse Volatility** to minimize variance.
+  - Simulates execution with integer shares and leftover cash.
 
 ---
 
 ## 🚀 Model Architectures
 
-We benchmark nine modeling techniques per asset:
+Nine modeling techniques, benchmarked per asset:
 
 | Category | Model Architecture |
 |---|---|
@@ -57,7 +57,7 @@ We benchmark nine modeling techniques per asset:
 
 ## 📈 Performance & Output Metrics
 
-We export every backtest result to `portfolio_output.csv`:
+Every backtest result exports to `portfolio_output.csv`:
 
 - **Portfolio Metrics** — Total Return, Daily ROI, Projected Annualized ROI.
 - **Risk Metrics** — Annualized Volatility, Sharpe Ratio (Rf = 3.8%).
@@ -77,7 +77,7 @@ We export every backtest result to `portfolio_output.csv`:
 
 ### Prerequisites
 
-We need Python 3.10+ and these libraries:
+Python 3.10+ and these libraries:
 
 ```bash
 pip install numpy pandas scikit-learn tensorflow xgboost lightgbm
