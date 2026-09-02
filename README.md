@@ -69,7 +69,7 @@ Every backtest result exports to `portfolio_output.csv`:
 
 - **Environment**: Kaggle Notebooks (Dual Tesla T4 / P100 GPU)
 - **Core Libraries**: `tensorflow`, `keras`, `xgboost`, `lightgbm`, `pandas`, `numpy`, `scikit-learn`
-- **Version Control**: GitHub repository (`multi-stock-ml-benchmark`)
+- **Version Control**: GitHub repository (`multi-stock-ml-benchmark-portfolio-optimization`)
 
 ---
 
